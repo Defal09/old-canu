@@ -1,0 +1,195 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+body { 
+    background-color: rgb(32 0 58);
+    margin: 0;
+    font-family: "Open";
+    font-size: 21px;
+    color: #f0e1fd;
+}
+
+@font-face {
+    font-family: "Open";
+    src: url("fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+.header-menu {
+    background-color: #11001fc7;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header-menu a {
+    color: white;
+    margin-right: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px;
+    height: 88px;
+} 
+
+.header-menu a:hover,
+.header-menu a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#content-container section {
+    max-width: 100%;
+    min-width: 1200px; 
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    padding: 50px 30px 30px 30px;
+}
+
+.home-section {
+    min-height: calc(100vh - 138px);
+    display: flex;
+    align-items: center;
+}
+
+.canu-mascot {
+    margin-right: 25px;
+    max-width: 150%;
+    margin-left: -50%;
+    margin-top: -20%;
+}
+
+#content-container p {
+    max-width: 90%;
+    width: 90%;
+}
+
+.social-medias img {
+    width: 64px;
+    max-width: 64px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-medias {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    bottom: 10px;
+    margin-left: 10px;
+}
+
+.carousel-container img {
+    display: none;
+}
+
+.carousel-container .active,
+.carousel-container .arrow {
+    display: inline;
+}
+
+.carousel-container .arrow-prev {
+    transform: rotate(180deg);
+}
+
+.carousel-container .arrow {
+    position: absolute;
+    cursor: pointer;
+    width: 44px;
+    margin-top: 50%;
+}
+
+.carousel-container .arrow-next {
+    right: 0;
+}
+
+.carousel-container .active {
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.separator .separator1 {
+    width: 100%;
+    border-bottom: 10px solid #FDA813;
+}
+
+.separator .separator2 {
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 10px solid #A866CD;
+}
+
+h1, h2 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.header-menu .active-section {
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+.header-menu .active-section:hover {
+    background-color: rgb(226, 221, 221);
+    color: black;
+    border-radius: 5px;
+}
+
+div p b {
+    color: white;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: white; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.cards-section .col-md-6,
+.cards-section .col-md-12 {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-color: #20003a;
+    padding: 0 15px !important;
+    margin-bottom: 25px;
+}
+
+.cards-section .col-md-6 {
+    max-width: 49%;
+}
+
+.cards-section .col-with-space {
+    margin-right: 2%;
+    padding-bottom: 55px !important;
+    background-color: #f9f2ff;
+    border-color: #c5c5c5;
+    box-shadow: 5px 5px 5px #c5c5c5;
+    color: black;
+}
+
+.cards-section .col-with-space h2 {
+    color: black;
+}
+
+.cards-section .col-md-12 {}
