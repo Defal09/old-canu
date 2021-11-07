@@ -3,23 +3,28 @@ html {
     scroll-padding-top: 120px;
 }
 
-body { 
-    background-color: rgb(32 0 58);
+body {
+    background-color: rgb(254 255 255);
     margin: 0;
-    font-family: "Open";
+    font-family: "Work";
     font-size: 21px;
-    color: #f0e1fd;
+    color: black;
 }
 
 @font-face {
-    font-family: "Open";
-    src: url("fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+    font-family: "Work";
+    src: url("fonts/Work_Sans/static/WorkSans-Regular.ttf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@font-face {
+    font-family: "Work";
+    font-weight: bold;
+    src: url("fonts/Work_Sans/static/WorkSans-Bold.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
 .header-menu {
-    background-color: #11001fc7;
     padding: 30px 0;
     display: flex;
     flex-direction: row;
@@ -28,29 +33,44 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: white;
+}
+
+.header-menu-animation {
+    background-color: #11001fc7;
+    transition: background-color 0.2s ease;
 }
 
 .header-menu a {
-    color: white;
+    color: black;
     margin-right: 50px;
     font-weight: bold;
     text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 24px;
     font-weight: 700;
     padding: 10px;
     height: 88px;
-} 
+}
 
 .header-menu a:hover,
 .header-menu a:focus {
     text-decoration: none;
+    color: black;
+}
+
+.header-menu-animation a {
+    color: white;
+}
+
+.header-menu-animation a:hover,
+.header-menu-animation a:focus {
     color: white;
 }
 
 #content-container section {
     max-width: 100%;
-    min-width: 1200px; 
+    min-width: 1200px;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20px;
@@ -65,9 +85,8 @@ body {
 
 .canu-mascot {
     margin-right: 25px;
-    max-width: 150%;
-    margin-left: -50%;
-    margin-top: -20%;
+    max-width: 80%;
+    margin-left: 10%;
 }
 
 #content-container p {
@@ -122,18 +141,19 @@ body {
 
 .separator .separator1 {
     width: 100%;
-    border-bottom: 10px solid #FDA813;
+    border-bottom: 10px solid #fda813;
 }
 
 .separator .separator2 {
     width: 100%;
     margin-top: 10px;
-    border-bottom: 10px solid #A866CD;
+    border-bottom: 10px solid #a866cd;
 }
 
-h1, h2 {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+h1,
+h2 {
+    color: black;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 700;
 }
 
@@ -149,7 +169,7 @@ h1, h2 {
 }
 
 div p b {
-    color: white;
+    color: black;
 }
 
 ul {
@@ -157,8 +177,8 @@ ul {
 }
 
 ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: white; /* Change the color */
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: black; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
@@ -179,17 +199,50 @@ ul li::before {
     max-width: 49%;
 }
 
-.cards-section .col-with-space {
-    margin-right: 2%;
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-section .col-md-3,
+.cards-section .col-md-6,
+.cards-section .col-md-12 {
     padding-bottom: 55px !important;
     background-color: #f9f2ff;
     border-color: #c5c5c5;
-    box-shadow: 5px 5px 5px #c5c5c5;
+    padding-left: 2rem !important;
     color: black;
+    box-shadow: 0 0 black;
+    transition: box-shadow 0.3s ease;
+}
+
+.cards-section .col-md-3:hover {
+    box-shadow: 5px 5px black;
 }
 
 .cards-section .col-with-space h2 {
     color: black;
 }
 
-.cards-section .col-md-12 {}
+.row-about {
+    margin-top: 25px;
+}
+section#canu {
+    min-width: 100%;
+}
+
+section#canu .container {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+section#home {
+    min-width: 100%;
+}
+section#home .container {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.col-margin-left {
+    margin-left: 4%;
+}

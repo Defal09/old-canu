@@ -2,61 +2,54 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <title>CanuDAO2</title>
+    <title>CanuDAO</title>
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
-    <script>
-        function removeStyledHoverfAllMenuItems() {
-            var menuItems = Array.from(document.getElementsByClassName("active-section"));
-            menuItems.forEach(element => {
-                element.classList.remove("active-section");
-            });
-        }
-
-        function insertStyledHover(menuItemID) {
-            removeStyledHoverfAllMenuItems();
-            document.getElementById(menuItemID).classList.add("active-section")
-        }
-    </script>
     <div id="header" class="header-menu">
         <nav>
-            <a href="#home" onclick="return insertStyledHover('homeMenuItem')" 
-                id="homeMenuItem" class="menu-item active-section">
+            <a href="#home" id="homeMenuItem" class="menu-item active-section">
                 CanuDAO
             </a>
-            <a href="#projects" onclick="return insertStyledHover('projectsMenuItem')" 
-                id="projectsMenuItem" class="menu-item ">
+            <a href="#projects" id="projectsMenuItem" class="menu-item ">
                 Solutions
             </a>
-            <a href="#cases" onclick="return insertStyledHover('casesMenuItem')" 
-                id="casesMenuItem" class="menu-item ">
+            <a href="#cases" id="casesMenuItem" class="menu-item ">
                 Cases
             </a>
-            <a href="#canu" onclick="return insertStyledHover('canuMenuItem')" 
-                id="canuMenuItem" class="menu-item ">
+            <a href="#canu" id="canuMenuItem" class="menu-item ">
                 The DAO</a>
-            <a href="#contact" onclick="return insertStyledHover('contactMenuItem')" 
-                id="contactMenuItem" class="menu-item ">
+            <a href="#contact" id="contactMenuItem" class="menu-item ">
                 Get in touch</a>
         </nav>
     </div>
     <div id="content-container" class="content-wrapper">
-        <section id="home" class="home-section">
+        <section id="home" class="home-section js-content-section">
             <div class="container">
                 <div class="row-no-gutters">
                     <div class="col-md-4">
-                        <img src="img/canu-mascot.png" class="canu-mascot" alt="CanuDAO Mascot">
+                        <img src="img/canu-logo.png" class="canu-mascot" alt="CanuDAO">
                     </div>
-                    
                     <div class="col-md-8">
-                        <h1>CanuDAO</h1>
                         <p><b>The era of decentralized-autonomous WE.</b>
                         </p>
-                        <p>Communities are the backbone of any decentralized space but building a strong long-lasting one is not an easy task.</p>
-                        <p>CanuDao is a diverse (this might be a community goal) and inclusive community made up of people of different ages, countries and backgrounds who share the same goal: <b>we strive to help communities thrive</b> and we do this by focusing on improving each member's experience.</p>
+                        <p>Nothing is more heartbreaking than watching how what used to be a vibrant and lively community starts to fade away. Members get less involved overtime.  Conversations become less and less stimulating. Relationships weaken. The value that was once co-created slowly dies away.</p>
+                    </div>
+                    <div class="col-md-12 col-margin-left">
+                        <p>Members can't find incentives anymore... and the community becomes a graveyard.</p>
+                        <p>RIP.</p>
+                        <p>Building a strong long-lasting community is not an easy task, and in the case of DAOs the task gets even more demanding.</p>
+                        <p>But we know that: </p>
+                        <p>Communities are the backbone of any DAO.</p>
+                        <p>And we also know that:</p>
+                        <p>DAO's will be the future of communities in five years. </p>
+
+                        <p><b>And here comes CanuDAO. </b>
+                        </p>
+                        <p>CanuDao is a diverse and inclusive community made up of people of different ages, countries and backgrounds who share the same goal: <b>we strive to help communities thrive</b> and we do this by focusing on improving each member's experience and creating a talent pipeline for community managers.</p>
                     </div>
                 </div>
             </div>
@@ -65,29 +58,17 @@
             <div class="separator1"></div>
             <div class="separator2"></div>
         </div>
-        <section id="projects">
+        <section id="projects" class="js-content-section">
             <p>
                 <h1>Okay, but what problems do we solve? </h1>
-                One of the main challenges that all communities face is meeting the expectations of their members, and this is something difficult to achieve because there are some problems that are common in most communities: 
-                <ul>
-                    <li>A confusing onboarding process</li>
+                One of the main challenges that all communities face is meeting the expectations of their members, which is something difficult to achieve of the common problems that are found in most communities: no focus on member's experience, confusing on boarding processes, no alignment of incentives, no transparency or clear rewards,  no pathways to build relationships... 
+            </p>
+            <p>We combine our human talent and technological tools to provide solutions to these problems by:
+                <ol>
+                    <li>Designing a meaningful community journey and experience for each member. </li>
                     
-                    <li>No transparency or clear rewards</li>
-                    
-                    <li>A lack of strategic planning and focus</li>
-                    
-                    <li>Uninspired discussions</li>
-                    
-                    <li>Low engagement</li>
-                    
-                    <li>No pathways to build relationships amongst members</li>
-                    
-                    <li>xxx</li>
-                    
-                    <li>xxx</li>
-                    
-                    <li>xxx</li>
-                </ul>
+                    <li>Creating a space where community builders can learn, grow, connect and find opportunities. </li>
+                </ol>
                 We combine our human talent and technological tools to provide solutions to these problems and design a meaningful community journey and experience for each member. 
             </p>
         </section>
@@ -95,7 +76,7 @@
             <div class="separator1"></div>
             <div class="separator2"></div>
         </div>
-        <section id="cases">
+        <section id="cases" class="js-content-section">
             <div class="container">
                 <div class="row-no-gutters">
                     <div class="col-md-5">
@@ -149,13 +130,13 @@
                 }
             } 
         </script>
-        <section id="canu">
+        <section id="canu" class="js-content-section">
             <p>
                 <h1>The DAO</h1> 
             </p>
-            <div class="container cards-section">
+            <div class="container">
                 <div class="row-no-gutters">
-                    <div class="col-md-6 col-with-space">
+                    <div class="col-md-6">
                         <h2>Open Doors & Contributor-First</h2> 
                         <p>We walk our talk and in CanuDao we will help you achieve your goals. </p>
                         <p>You are welcome to join our discussions and find out if you want to contribute and how. You will find ideas are always flowing and bounties are constantly up for grab to anyone who wants to help.</p>
@@ -169,13 +150,22 @@
                         <p>Tokens will give you voting power in treasury related topics starting Q2 2022. 
                         </p>
                     </div>
-                    <div class="col-md-12">
-                        <h2>Founders</h2> 
-                        <p>Zeugh</p>
-                        <p>MVH</p>
-                        <p>Phytann</p>
+                </div>
+                <div class="row-no-gutters">
+                    <h2>Founders</h2> 
+                    <div class="cards-section">
+                        <div class="col-md-3">
+                            <p>Zeugh</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>MVH</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Phytann</p>
+                        </div>
                     </div>
-                    
+                </div>
+                <div class="row-no-gutters row-about">
                     <div class="col-md-12">
                         <h2>About Canu</h2> 
                         <p>Canu is a brazilian word that stands for big straw...</p>
@@ -187,7 +177,7 @@
             <div class="separator1"></div>
             <div class="separator2"></div>
         </div>
-        <section id="contact">
+        <section id="contact" class="js-content-section">
             <h1>Get in touch</h1>
             <p>e-mail - canuDAO@protonmail.com</p>
             <p>Twitter - <a href="https://twitter.com/canu_dao" target="_blank">https://twitter.com/canu_dao</a></p>
