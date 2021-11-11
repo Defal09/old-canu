@@ -144,6 +144,11 @@ body {
     border-bottom: 10px solid #fda813;
 }
 
+.separator .separator3 {
+    width: 100vw;
+    border-bottom: 10px solid #de554a;
+}
+
 .separator .separator2 {
     width: 100%;
     margin-top: 10px;
@@ -208,7 +213,8 @@ ul li::before {
 .cards-section .col-md-6,
 .cards-section .col-md-12 {
     padding-bottom: 55px !important;
-    background-color: #f9f2ff;
+    background-color: rgba(226, 226, 226, 0.959);
+    /*background-color: #f9f2ff;*/
     border-color: #c5c5c5;
     padding-left: 2rem !important;
     color: black;
@@ -243,6 +249,77 @@ section#home .container {
     width: 100% !important;
 }
 
+section#get-involved container {
+    margin: 0 10vw !important
+}
+
 .col-margin-left {
     margin-left: 4%;
+}
+
+.dark-card-body {
+    background-color: #353347;
+    border-radius: 1em;
+    color: white;
+    padding: 2em;
+    height: 100%;
+}
+.dark-card-body * {
+    color: white;
+}
+
+.dark-card-container .dark-card-title {
+    text-align: center;
+}
+.dark-card-body {
+    height: 60vh;
+    max-height: 600px;
+}
+.dark-card-body h2 {
+    color: white;
+}
+.creator-col-wrapper {
+    background-color: whitesmoke !important;
+    border-radius: 20px;
+}
+
+.creator-block .creator-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.creator-block .name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.creator-block .description {
+    font-weight: 100;
+    text-align: center;
+}
+
+footer {
+    background-color: #343346;
+}
+.footer-information {
+    text-align: center;
+    width: auto;
+    padding: 1vh;
+    color: white;
+}
+
+.social-media-footer {
+    padding: 3vh 10vw 1vh 10vw;
+    text-align: center;
+}
+.social-media-footer * {
+    color: white;
+}
+.social-media-footer h2 {
+    text-align: start;
+}
+
+.social-media-icon {
+    font-weight: bold;
 }
