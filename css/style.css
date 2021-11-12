@@ -353,7 +353,12 @@ section#about-canu .container {
     color: white;
 }
 
-.dark-card-container .dark-card-title {
+.card-body p {
+    width: 100%;
+    max-width: 100%;
+}
+
+.dark-card-title {
     text-align: center;
 }
 
@@ -403,8 +408,10 @@ footer {
     font-weight: bold;
 }
 
-.contact-container {
-    display: flex;
+.contact-container * {
+    text-align: center;
+    max-width: 100% !important;
+    width: 100% !important;
 }
 
 .here-comes {
