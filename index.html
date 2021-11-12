@@ -8,100 +8,89 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="./js/index.js" defer></script>
 </head>
-<body>
-    <div id="header" class="header-menu">
-        <nav>
-            <a href="#home" id="homeMenuItem" class="menu-item active-section">
-                CanuDAO
+    <body>
+        <div id="header" class="header-menu">
+            <div class="menu-icon" id="menu-icon" onclick="showMenu()">
+                <img src="./img/menu-icon.svg">
+            </div>
+            <nav style="display: none;" id="header-nav">
+                <a onclick="hideMenu()" href="#land-page" class="menu-item">
+                    CanuDAO
+                </a>
+                <a onclick="hideMenu()" href="#projects" class="menu-item ">
+                    Solutions
+                </a>
+                <a onclick="hideMenu()" href="#get-involved" class="menu-item ">
+                    Get Involved
+                </a>
+                <a onclick="hideMenu()" href="#contact" class="menu-item contact-menu">
+                    Get in touch
+                </a>
+            </nav>
+        </div>
+        <div id="content-container" class="content-wrapper">
+        <section id="land-page" class="land-section">
+            <div class="wrapper">
+                <img src="img/canu-logo.png" class="canu-mascot" alt="CanuDAO">
+                <span>WE STRIVE TO HELP WEB3 COMMUNITIES THRIVE</span>
+            </div>
+            <a href="https://discord.gg/j4fXXJ5MZQ" target="_blank">
+                <div class="disc-join">
+                    JOIN
+                    <img src="img/discord-icon-red.png" class="discord-icon" alt="Discord">
+                </div>
             </a>
-            <a href="#projects" id="projectsMenuItem" class="menu-item ">
-                Solutions
-            </a>
-            <a href="#cases" id="casesMenuItem" class="menu-item ">
-                Cases
-            </a>
-            <a href="#canu" id="canuMenuItem" class="menu-item ">
-                The DAO</a>
-            <a href="#contact" id="contactMenuItem" class="menu-item ">
-                Get in touch</a>
-        </nav>
-    </div>
-    <div id="content-container" class="content-wrapper">
+        </section>
         <section id="home" class="home-section js-content-section">
             <div class="container">
                 <div class="row-no-gutters">
-                    <div class="col-md-4">
-                        <img src="img/canu-logo.png" class="canu-mascot" alt="CanuDAO">
-                    </div>
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <p><b>The era of decentralized-autonomous WE.</b>
                         </p>
+                        <img src="img/img-group-connect.png" class="img-group">
                         <p>Nothing is more heartbreaking than watching how what used to be a vibrant and lively community starts to fade away. Members get less involved overtime.  Conversations become less and less stimulating. Relationships weaken. The value that was once co-created slowly dies away.</p>
-                    </div>
-                    <div class="col-md-12 col-margin-left">
                         <p>Members can't find incentives anymore... and the community becomes a graveyard.</p>
-                        <p>RIP.</p>
+                        <p><b>RIP.</b></p>
                         <p>Building a strong long-lasting community is not an easy task, and in the case of DAOs the task gets even more demanding.</p>
-                        <p>But we know that: </p>
-                        <p>Communities are the backbone of any DAO.</p>
-                        <p>And we also know that:</p>
-                        <p>DAO's will be the future of communities in five years. </p>
-
+                        <p><b>But we know that: </b></p>
+                        <div>
+                            <img src="./img/icon-connection.png" class="icon" />
+                            <p>Communities are the backbone of any DAO.</p>
+                        </div>
+                        <p><b>And we also know that:</b></p>
+                        <div>
+                            <img src="./img/icon-graph.png" class="icon" />
+                            <p>DAO's will be the future of communities in five years. </p>
+                        </div>
                         <p><b>And here comes CanuDAO. </b>
                         </p>
-                        <p>CanuDao is a diverse and inclusive community made up of people of different ages, countries and backgrounds who share the same goal: <b>we strive to help communities thrive</b> and we do this by focusing on improving each member's experience and creating a talent pipeline for community managers.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="separator">
-            <div class="separator1"></div>
-            <div class="separator2"></div>
-        </div>
-        <section id="projects" class="js-content-section">
+        <section class="here-comes">
+            <div>
+                <p>CanuDao is a diverse and inclusive community made up of people of different ages, countries and backgrounds who share the same goal: <b>we strive to help communities thrive</b> and we do this by focusing on improving each member's experience and creating a talent pipeline for community managers.</p>
+            </div>
+        </section>
+        <section id="projects" class="solutions-section js-content-section">
             <p>
-                <h1>Okay, but what problems do we solve? </h1>
-                One of the main challenges that all communities face is meeting the expectations of their members, which is something difficult to achieve of the common problems that are found in most communities: no focus on member's experience, confusing on boarding processes, no alignment of incentives, no transparency or clear rewards,  no pathways to build relationships... 
+                <img src="./img/person-notebook.png">
+                <h1>The problems we solve </h1>
+                One of the main challenges that all communities face is meeting the expectations of their members, which is something difficult to achieve of the common problems that are found in most communities: no focus on member's experience, confusing on boarding processes, no alignment of incentives, no transparency or clear rewards, no pathways to build relationships...
             </p>
-            <p>We combine our human talent and technological tools to provide solutions to these problems by:
-                <ol>
-                    <li>Designing a meaningful community journey and experience for each member. </li>
-                    
-                    <li>Creating a space where community builders can learn, grow, connect and find opportunities. </li>
-                </ol>
-                We combine our human talent and technological tools to provide solutions to these problems and design a meaningful community journey and experience for each member. 
-            </p>
-        </section>
-        <div class="separator">
-            <div class="separator1"></div>
-            <div class="separator2"></div>
-        </div>
-        <section id="cases" class="js-content-section">
-            <div class="container">
-                <div class="row-no-gutters">
-                    <div class="col-md-5">
-                        <h1>Cases</h1>
-                        <!-- <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  -->
-                    </div>
-                    <!-- <div class="col-md-5">
-                        <div class="carousel-container">
-                            <img src="img/arrow-forward.svg" onclick="prevSlide()" alt="Previous Slide" class="arrow arrow-prev">
-                            <img src="img/arrow-forward.svg" alt="Next Slide"  onclick="nextSlide()" class="arrow arrow-next">
-                            <div class="carousel-content">
-                                <img src="img/juicebox.png" id="slide1" alt="JuiceBox" class=" active ">
-                                <img src="img/wikitoken.png" id="slide2" alt="Wikit=Token">
-                                <img src="img/tiles.png" id="slide3" alt="TilesDAO">
-                            </div>
-                            
-                        </div>
-                    </div> -->
-                </div>
+            <p>We combine our <b>human talent and technological tools</b> to provide solutions to these problems by:</p>
+
+            <div class="list">
+            <p><span>1</span> Designing a meaningful community journey and experience for each member.</p>
+            <p><span>2</span> Creating a space where community builders can learn, grow, connect and find opportunities.</p>
             </div>
         </section>
         <div class="separator">
             <div class="separator1"></div>
             <div class="separator2"></div>
         </div>
+
         <script> 
             function nextSlide() {
                 if (document.getElementById("slide1").classList.contains("active")) {
@@ -132,33 +121,37 @@
         </script>
         <section id="get-involved" class="js-content-section">
             <div class="container">
-                <div class="row get-involved-wrapper">
-                    <p>
-                        <h2>Do you want to get involved?</h2> 
-                    </p>
-                    <div class="col-md-6">
-                        <div class="dark-card-container">
+                <h1>Do you want to get involved?</h1> 
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card-wrapper">
                             <div class="dark-card-title">
-                                <h2>{ICON} Open Doors</h2> 
+                                <h2><img class="icon" src="img/house-door-fill.svg" alt=""> Open Doors</h2> 
                             </div>
                             <div class="dark-card-body">
-                                <p><b>We walk our talk</b> and in CanuDao we will help you achieve your goals. </p>
-                                <p>You are welcome to join our discussions and find out if you want to contribute and how. You will find ideas are always flowing and bounties are constantly up for grab to anyone who wants to help.</p>
-                                <p>Members that have shown relevant contribution are invited to be part of the CanuDOERS, getting more tasks as trust goes up and better retributions for those.</p>
+                                <div class="card-body">
+                                    <p><b>We walk our talk</b> and in CanuDao we will help you achieve your goals. </p>
+                                    <p>You are welcome to join our discussions and find out if you want to contribute and how. You will find ideas are always flowing and bounties are constantly up for grab to anyone who wants to help.</p>
+                                    <p>Members that have shown relevant contribution are invited to be part of the CanuDOERS, getting more tasks as trust goes up and better retributions for those.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="col-md-6">
-                        <div class="dark-card-container">
+                    <div class="col-6">
+                        <div class="card-wrapper">
                             <div class="dark-card-title">
-                                <h2>{ICON} Treasury</h2>
+                                <h2><img class="icon" src="img/eth-diamond-purple.png" alt="Treasury"> Treasury</h2>
                             </div> 
                             <div class="dark-card-body">
-                                <p><b>Transparency first.</b> Our treasury is managed fully on-chain trough the JuiceBox Protocol. You can go to <a href="juicebox.money/#/p/canudaocomm" target="_blank">juicebox.money/#/p/canudaocomm</a> and see our payroll, balance, $CND token holders or maybe you want to get tokens yourself. </p>
-                                <p>All payments are made trough JuiceBox and get tokens in return, so all clients are token holders as much as anyone who buys token directly in JuiceBox. The ETH/CND proportion goes down with time, so early contributors get better rewards.</p>
-                                <p>Tokens will give you voting power in treasury related topics starting Q2 2022. 
-                                </p>
+                                <div class="card-body">
+                                    <p><b>Transparency first.</b> Our treasury is managed fully on-chain trough the JuiceBox Protocol. You can go to <a href="juicebox.money/#/p/canudaocomm" target="_blank">juicebox.money/#/p/canudaocomm</a> and see our payroll, balance, $CND token holders or maybe you want to get tokens yourself. </p>
+                                    <p>All payments are made trough JuiceBox and get tokens in return, so all clients are token holders as much as anyone who buys token directly in JuiceBox. The ETH/CND proportion goes down with time, so early contributors get better rewards.</p>
+                                    <p>Tokens will give you voting power in treasury related topics starting Q2 2022. 
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -170,61 +163,92 @@
             <div class="separator2"></div>
         </div>
         <section id="about-canu" class="js-content-section">
-            <div class="row-no-gutters row-about">
-                <div class="col-md-12">
-                    <h2>About Canu</h2> 
-                    <p>CanuDAO is a brazilian word that stands for big straw...</p>
+            <div >
+                <h1>Canu Team</h1>
+                <!--<h1>Creators</h1>-->
+            </div>
+            <div class="row cards-section">
+                <div class="col-md-3 creator-col-wrapper">
+                    <div class="creator-block">
+                        <div class="creator-picture">
+                            <p>
+                                {ICON}
+                            </p>
+                        </div>
+                        <p class="name">Zeugh</p>
+                        <p class="description">Short description about the person (optional)</p>
+                    </div>
                 </div>
-                <div class="row-no-gutters">
-                    <h2>Creators</h2> 
-                    <div class="cards-section">
-                        <div class="col-md-3 creator-col-wrapper">
-                            <div class="creator-block">
-                                <div class="creator-picture">
-                                    <p>
-                                        {ICON}
-                                    </p>
-                                </div>
-                                <p class="name">Zeugh</p>
-                                <p class="description">Short description about the person (optional)</p>
-                            </div>
+                <div class="col-md-3 creator-col-wrapper">
+                    <div class="creator-block">
+                        <div class="creator-picture">
+                            <p>
+                                {ICON}
+                            </p>
                         </div>
-                        <div class="col-md-3 creator-col-wrapper">
-                            <div class="creator-block">
-                                <div class="creator-picture">
-                                    <p>
-                                        {ICON}
-                                    </p>
-                                </div>
-                                <p class="name">MVH</p>
-                                <p class="description">Short description about the person (optional)</p>
-                            </div>
+                        <p class="name">MVH</p>
+                        <p class="description">Short description about the person (optional)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 creator-col-wrapper">
+                    <div class="creator-block">
+                        <div class="creator-picture">
+                            <p>
+                                {ICON}
+                            </p>
                         </div>
-                        <div class="col-md-3 creator-col-wrapper">
-                            <div class="creator-block">
-                                <div class="creator-picture">
-                                    <p>
-                                        {ICON}
-                                    </p>
-                                </div>
-                                <p class="name">Phytann</p>
-                                <p class="description">Short description about the person (optional)</p>
-                            </div>
-                        </div>
+                        <p class="name">Phytann</p>
+                        <p class="description">Short description about the person (optional)</p>
                     </div>
                 </div>
             </div>
-            
+            <br>
+            <!--Second Team row-->
+            <div class="row cards-section">
+                <div class="col-md-3 creator-col-wrapper">
+                    <div class="creator-block">
+                        <div class="creator-picture">
+                            <p>
+                                {ICON}
+                            </p>
+                        </div>
+                        <p class="name">Someone</p>
+                        <p class="description">Short description about the person (optional)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 creator-col-wrapper">
+                    <div class="creator-block">
+                        <div class="creator-picture">
+                            <p>
+                                {ICON}
+                            </p>
+                        </div>
+                        <p class="name">Another one</p>
+                        <p class="description">Short description about the person (optional)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 creator-col-wrapper">
+                    <div class="creator-block">
+                        <div class="creator-picture">
+                            <p>
+                                {ICON}
+                            </p>
+                        </div>
+                        <p class="name">Someone 2</p>
+                        <p class="description">Short description about the person (optional)</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <div class="separator">
             <div class="separator1"></div>
             <div class="separator2"></div>
         </div>
-        <section id="contact" class="js-content-section">
-            <h1>Get in touch</h1>
-            <p>Click on the icons and let's start a conversation!</p>
-            <!--<p>Twitter - <a href="https://twitter.com/canu_dao" target="_blank">https://twitter.com/canu_dao</a></p>
-            <p>Discord - <a href="https://discord.gg/j4fXXJ5MZQ" target="_blank">https://discord.gg/j4fXXJ5MZQ</a></p>-->
+        <section id="contact" class="js-content-section contact-container">
+            <div class="">
+                <h1>Get in touch</h1>
+                <p>Click on the icons and let's start a conversation!</p>
+            </div>
         </section>
     </div>
     <footer id="footer">
@@ -250,9 +274,6 @@
                 </div>
             </div>
         </div>
-            <div class="separator">
-                <div class="separator3"></div>
-            </div>
         <div class="footer-information">
             Footer
         </div>

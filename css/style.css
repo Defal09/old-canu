@@ -22,35 +22,45 @@ body {
     src: url("fonts/Work_Sans/static/WorkSans-Bold.ttf");
 }
 
+@font-face {
+    font-family: "Work";
+    font-weight: lighter;
+    src: url("fonts/Work_Sans/static/WorkSans-Light.ttf");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
 .header-menu {
-    padding: 30px 0;
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+    flex-direction: column;
+    top: 0px;
     z-index: 1;
-    background-color: white;
-}
-
-.header-menu-animation {
-    background-color: #11001fc7;
-    transition: background-color 0.2s ease;
+    right: 0;
+    background-color: #f6f4f4;
+    border-bottom-left-radius: 10px;
+    box-shadow: -5px 5px 5px #00000075;
 }
 
 .header-menu a {
     color: black;
-    margin-right: 50px;
-    font-weight: bold;
+    margin-right: 10px;
+    font-family: "Work";
     text-decoration: none;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 10px;
-    height: 88px;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid #e0dede;
+}
+.contact-menu {
+    border-bottom: none !important;
+}
+
+.header-menu nav {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    transition: display 2s ease;
 }
 
 .header-menu a:hover,
@@ -58,14 +68,19 @@ body {
     text-decoration: none;
     color: black;
 }
-
-.header-menu-animation a {
-    color: white;
+.menu-icon {
+    background-color: #f6f4f4;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    float: right;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
 }
 
-.header-menu-animation a:hover,
-.header-menu-animation a:focus {
-    color: white;
+.menu-icon img {
+    width: 40px;
+    float: right;
 }
 
 #content-container section {
@@ -77,19 +92,83 @@ body {
     padding: 50px 30px 30px 30px;
 }
 
+.home-section .col-md-12 div {
+    margin-left: 65px;
+}
+
+.home-section .col-md-12 div p {
+    display: inline;
+}
+
+.home-section .col-md-12 div .icon {
+    width: 65px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.here-comes b {
+    color: white;
+}
+
+.land-section {
+    background-color: #de554a;
+    width: 100%;
+    color: white;
+    font-family: "Work";
+    font-size: 26px;
+}
+
+.land-section .wrapper {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: 40%;
+}
+.land-section span {
+    font-weight: bold;
+    display: block;
+}
+.canu-mascot {
+    margin-right: 25px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.disc-join {
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    background-color: white;
+    color: #de554a;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+.disc-join img {
+    width: 50px;
+    margin: 10px;
+}
+
 .home-section {
     min-height: calc(100vh - 138px);
     display: flex;
-    align-items: center;
+    padding-top: 20px;
 }
 
-.canu-mascot {
-    margin-right: 25px;
-    max-width: 80%;
-    margin-left: 10%;
+.home-section .container {
+    margin-left: 100px;
 }
 
-#content-container p {
+.img-group {
+    float: right;
+}
+
+.content-wrapper p {
     max-width: 90%;
     width: 90%;
 }
@@ -206,7 +285,8 @@ ul li::before {
 
 .cards-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .cards-section .col-md-3,
@@ -250,7 +330,12 @@ section#home .container {
 }
 
 section#get-involved container {
-    margin: 0 10vw !important
+    margin: 0 10vw !important;
+}
+
+section#about-canu .container {
+    display: flex;
+    justify-content: center;
 }
 
 .col-margin-left {
@@ -261,8 +346,8 @@ section#get-involved container {
     background-color: #353347;
     border-radius: 1em;
     color: white;
-    padding: 2em;
     height: 100%;
+    padding: 3%;
 }
 .dark-card-body * {
     color: white;
@@ -271,13 +356,7 @@ section#get-involved container {
 .dark-card-container .dark-card-title {
     text-align: center;
 }
-.dark-card-body {
-    height: 60vh;
-    max-height: 600px;
-}
-.dark-card-body h2 {
-    color: white;
-}
+
 .creator-col-wrapper {
     background-color: whitesmoke !important;
     border-radius: 20px;
@@ -322,4 +401,47 @@ footer {
 
 .social-media-icon {
     font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.here-comes {
+    width: 100%;
+    background-color: #353347;
+    color: white;
+    padding-left: 200px !important;
+    padding-top: 25px !important;
+    margin-top: -50px;
+}
+
+.solutions-section {
+    width: 80%;
+}
+
+.solutions-section img {
+    float: right;
+    width: 600px;
+    margin-left: 20px;
+}
+
+.solutions-section ol {
+    margin-left: 30px;
+}
+
+.solutions-section .list {
+    margin-left: 50px;
+}
+
+.solutions-section .list span {
+    background-color: #de554a;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.icon {
+    height: 40px;
+    vertical-align: bottom;
 }
