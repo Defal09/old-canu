@@ -39,7 +39,7 @@ body {
     right: 0;
     background-color: #f6f4f4;
     border-bottom-left-radius: 10px;
-    box-shadow: -5px 5px 5px #00000075;
+    box-shadow: 0px 0px 5px 4px #00000035;
 }
 
 .header-menu a {
@@ -73,9 +73,12 @@ body {
     border-bottom-left-radius: 10px;
     cursor: pointer;
     float: right;
+    display: flex;
+    flex-direction: row;
+
     top: 0;
     z-index: 100;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .menu-icon img {
@@ -92,15 +95,15 @@ body {
     padding: 50px 30px 30px 30px;
 }
 
-.home-section .col-md-12 div {
+.home-section div {
     margin-left: 65px;
 }
 
-.home-section .col-md-12 div p {
+.home-section div p {
     display: inline;
 }
 
-.home-section .col-md-12 div .icon {
+.home-section div .icon {
     width: 65px;
     display: inline-block;
     margin-right: 15px;
@@ -123,6 +126,7 @@ body {
     width: 40%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -133,39 +137,43 @@ body {
     display: block;
 }
 .canu-mascot {
-    margin-right: 25px;
     max-width: 100%;
-    width: 100%;
+    width: 80%;
 }
 
 .disc-join {
-    position: absolute;
-    top: 10px;
-    right: 5%;
-    background-color: white;
+    top: 0px;
+    background-color: #f6f4f4;
     color: #de554a;
     font-weight: bold;
+    border-radius: 10px;
     font-size: 22px;
     padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu .disc-link {
+    margin-right: 0px;
+    padding: 0;
+    border-bottom: none;
 }
 
 .disc-join img {
-    width: 50px;
+    width: 40px;
     margin: 10px;
 }
 
 .home-section {
-    min-height: calc(100vh - 138px);
-    display: flex;
     padding-top: 20px;
-}
-
-.home-section .container {
-    margin-left: 100px;
+    width: 80% !important;
+    min-width: 80% !important;
+    max-width: 80% !important;
 }
 
 .img-group {
     float: right;
+    max-width: 40%;
 }
 
 .content-wrapper p {
@@ -418,9 +426,10 @@ footer {
     width: 100%;
     background-color: #353347;
     color: white;
-    padding-left: 200px !important;
+    padding-left: 19% !important;
+    padding-right: 19% !important;
     padding-top: 25px !important;
-    margin-top: -50px;
+    margin-top: 50px;
 }
 
 .solutions-section {
@@ -446,9 +455,20 @@ footer {
     color: white;
     padding-right: 10px;
     padding-left: 10px;
+    font-variant-numeric: tabular-nums;
 }
 
 .icon {
     height: 40px;
     vertical-align: bottom;
+}
+
+.icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons-wrapper .icon {
+    height: auto;
 }

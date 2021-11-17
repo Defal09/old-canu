@@ -10,8 +10,14 @@
 </head>
     <body>
         <div id="header" class="header-menu">
-            <div class="menu-icon" id="menu-icon" onclick="showMenu()">
-                <img src="./img/menu-icon.svg">
+            <div class="menu-icon" id="menu-icon">
+                <a href="https://discord.gg/j4fXXJ5MZQ" class="disc-link" target="_blank">
+                    <div class="disc-join">
+                        JOIN
+                        <img src="img/discord-icon-red.png" class="discord-icon" alt="Discord">
+                    </div>
+                </a>
+                <img src="./img/menu-icon.svg" onclick="showMenu()">
             </div>
             <nav style="display: none;" id="header-nav">
                 <a onclick="hideMenu()" href="#land-page" class="menu-item">
@@ -29,44 +35,33 @@
             </nav>
         </div>
         <div id="content-container" class="content-wrapper">
-        <section id="land-page" class="land-section">
-            <div class="wrapper">
-                <img src="img/canu-logo.png" class="canu-mascot" alt="CanuDAO">
-                <span>WE STRIVE TO HELP WEB3 COMMUNITIES THRIVE</span>
-            </div>
-            <a href="https://discord.gg/j4fXXJ5MZQ" target="_blank">
-                <div class="disc-join">
-                    JOIN
-                    <img src="img/discord-icon-red.png" class="discord-icon" alt="Discord">
+            <section id="land-page" class="land-section">
+                <div class="wrapper">
+                    <img src="img/canu-logo.png" class="canu-mascot" alt="CanuDAO">
+                    <span>WE STRIVE TO HELP WEB3 COMMUNITIES THRIVE</span>
                 </div>
-            </a>
+                
         </section>
         <section id="home" class="home-section js-content-section">
-            <div class="container">
-                <div class="row-no-gutters">
-                    <div class="col-md-12">
-                        <p><b>The era of decentralized-autonomous WE.</b>
-                        </p>
-                        <img src="img/img-group-connect.png" class="img-group">
-                        <p>Nothing is more heartbreaking than watching how what used to be a vibrant and lively community starts to fade away. Members get less involved overtime.  Conversations become less and less stimulating. Relationships weaken. The value that was once co-created slowly dies away.</p>
-                        <p>Members can't find incentives anymore... and the community becomes a graveyard.</p>
-                        <p><b>RIP.</b></p>
-                        <p>Building a strong long-lasting community is not an easy task, and in the case of DAOs the task gets even more demanding.</p>
-                        <p><b>But we know that: </b></p>
-                        <div>
-                            <img src="./img/icon-connection.png" class="icon" />
-                            <p>Communities are the backbone of any DAO.</p>
-                        </div>
-                        <p><b>And we also know that:</b></p>
-                        <div>
-                            <img src="./img/icon-graph.png" class="icon" />
-                            <p>DAO's will be the future of communities in five years. </p>
-                        </div>
-                        <p><b>And here comes CanuDAO. </b>
-                        </p>
-                    </div>
-                </div>
+            <p><b>The era of decentralized-autonomous WE.</b>
+            </p>
+            <img src="img/img-group-connect.png" class="img-group">
+            <p>Nothing is more heartbreaking than watching how what used to be a vibrant and lively community starts to fade away. Members get less involved overtime.  Conversations become less and less stimulating. Relationships weaken. The value that was once co-created slowly dies away.</p>
+            <p>Members can't find incentives anymore... and the community becomes a graveyard.</p>
+            <p><b>RIP.</b></p>
+            <p>Building a strong long-lasting community is not an easy task, and in the case of DAOs the task gets even more demanding.</p>
+            <p><b>But we know that: </b></p>
+            <div class="icons-wrapper">
+                <img src="./img/icon-connection.png" class="icon" />
+                <p>Communities are the backbone of any DAO.</p>
             </div>
+            <p><b>And we also know that:</b></p>
+            <div class="icons-wrapper">
+                <img src="./img/icon-graph.png" class="icon" />
+                <p>DAO's will be the future of communities in five years. </p>
+            </div>
+            <p><b>And here comes CanuDAO. </b>
+            </p>
         </section>
         <section class="here-comes">
             <div>

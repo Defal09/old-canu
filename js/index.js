@@ -54,21 +54,17 @@
 // });
 
 function showMenu() {
-    if (document.getElementById("header-nav").style.display === "none") {
-        document.getElementById("header-nav").style.display = "flex";
-        let headerNav = document.getElementById("header-nav");
-        document.getElementById("menu-icon").style.width = window
-            .getComputedStyle(headerNav)
-            .getPropertyValue("width");
+    let headerNav = document.getElementById("header-nav");
+    if (headerNav.style.display === "none") {
+        headerNav.style.display = "flex";
         document.getElementById("menu-icon").style.borderBottomLeftRadius =
             "0px";
     } else {
-        hideMenu();
+        hideMenu(headerNav);
     }
 }
 
-function hideMenu() {
-    document.getElementById("header-nav").style.display = "none";
-    document.getElementById("menu-icon").style.width = "60px";
+function hideMenu(headerNav) {
+    headerNav.style.display = "none";
     document.getElementById("menu-icon").style.borderBottomLeftRadius = "10px";
 }
