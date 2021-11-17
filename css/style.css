@@ -88,7 +88,6 @@ body {
 
 #content-container section {
     max-width: 100%;
-    min-width: 1200px;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20px;
@@ -139,6 +138,7 @@ body {
 .canu-mascot {
     max-width: 100%;
     width: 80%;
+    min-width: 350px;
 }
 
 .disc-join {
@@ -337,6 +337,10 @@ section#home .container {
     width: 100% !important;
 }
 
+section#get-involved {
+    min-width: 1200px;
+}
+
 section#get-involved container {
     margin: 0 10vw !important;
 }
@@ -424,6 +428,7 @@ footer {
 
 .here-comes {
     width: 100%;
+    min-width: auto !important;
     background-color: #353347;
     color: white;
     padding-left: 19% !important;
@@ -434,6 +439,8 @@ footer {
 
 .solutions-section {
     width: 80%;
+    max-width: 100vw !important;
+    min-width: auto !important;
 }
 
 .solutions-section img {
@@ -493,4 +500,43 @@ footer {
 
 .social-media-row {
     margin-bottom: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 2em;
+    }
+
+    .home-section {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .img-group {
+        display: none;
+    }
+
+    .here-comes {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+
+    .solutions-section {
+        width: 90%;
+    }
+
+    .solutions-section img {
+        display: none;
+    }
+
+    .list {
+        margin-left: 30px !important;
+    }
+
+    .canu-mascot {
+        margin-top: 100px;
+    }
 }
