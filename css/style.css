@@ -339,7 +339,9 @@ section#home .container {
 }
 
 section#get-involved {
-    min-width: 1200px;
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: auto !important;
 }
 
 section#get-involved .container {
@@ -538,5 +540,11 @@ footer {
 
     .canu-mascot {
         margin-top: 100px;
+    }
+
+    .involved-class {
+        max-width: 100%;
+        width: 100%;
+        min-width: auto !important;
     }
 }
