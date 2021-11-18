@@ -308,6 +308,7 @@ ul li::before {
     color: black;
     box-shadow: 0 0 black;
     transition: box-shadow 0.3s ease;
+    margin-bottom: 3%;
 }
 
 .cards-section .col-md-3:hover {
@@ -341,8 +342,7 @@ section#get-involved {
     min-width: 1200px;
 }
 
-section#get-involved container {
-    margin: 0 10vw !important;
+section#get-involved .container {
 }
 
 section#about-canu .container {
