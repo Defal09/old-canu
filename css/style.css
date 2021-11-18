@@ -153,6 +153,20 @@ body {
     align-items: center;
 }
 
+.cta-join-discord:hover {
+    text-decoration: none;
+}
+
+.disc-join-inverse {
+    background-color: #de554a;
+    color: #f6f4f4;
+}
+
+.disc-join-inverse img {
+    width: 40px;
+    margin: 10px;
+}
+
 .header-menu .disc-link {
     margin-right: 0px;
     padding: 0;
@@ -232,7 +246,7 @@ body {
 }
 
 .separator .separator3 {
-    width: 100vw;
+    width: 100%;
     border-bottom: 10px solid #de554a;
 }
 
@@ -345,6 +359,10 @@ section#get-involved {
 }
 
 section#get-involved .container {
+}
+
+section#about-canu {
+    padding: 0 !important;
 }
 
 section#about-canu .container {
@@ -504,6 +522,43 @@ footer {
     margin-bottom: 0.5em;
 }
 
+.flex-container {
+    -ms-box-orient: horizontal;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+    text-align: center;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin: 0 5vw;
+}
+
+
+#get-involved .flex-item {
+    box-shadow: 0 0 black;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    
+}
+
+#get-involved .flex-item:hover {
+    box-shadow: 4px 4px black;
+    border-radius: 10px;
+}
+
+#get-involved .container .disc-link {
+    background-color: black;
+    width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     body {
         font-size: 2em;
@@ -546,5 +601,9 @@ footer {
         max-width: 100%;
         width: 100%;
         min-width: auto !important;
+    }
+
+    .flex-item {
+        margin: 0 2vw;
     }
 }
