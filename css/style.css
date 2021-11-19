@@ -358,16 +358,13 @@ section#get-involved {
     min-width: auto !important;
 }
 
-section#get-involved .container {
-}
 
-section#about-canu {
+section#canudoers {
     padding: 0 !important;
 }
 
-section#about-canu .container {
-    display: flex;
-    justify-content: center;
+section#canudoers h1 {
+    text-align: center;
 }
 
 .col-margin-left {
@@ -605,5 +602,10 @@ footer {
 
     .flex-item {
         margin: 0 2vw;
+    }
+
+    section#canudoers h1 {
+        display: flex;
+        justify-content: center;
     }
 }
