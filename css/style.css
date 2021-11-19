@@ -153,8 +153,8 @@ body {
     align-items: center;
 }
 
-.cta-join-discord:hover {
-    text-decoration: none;
+.cta-join-discord a {
+    text-decoration: none !important;
 }
 
 .disc-join-inverse {
@@ -607,5 +607,11 @@ footer {
     section#canudoers h1 {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .creator-col-wrapper {
+        min-width: 300px;
     }
 }
